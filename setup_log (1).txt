@@ -1,0 +1,226 @@
+=== Wed Jul 15 06:27:49 UTC 2026 ROS_DOMAIN_ID=20
+===  ros2 node list
+/YB_Car_Node
+/odom_corrector
+=== ros2 topic list
+/battery
+/beep
+/cmd_vel
+/imu
+/odom
+/odom_raw
+/odom_reset
+/parameter_events
+/rosout
+/scan
+/servo_s1
+/servo_s2
+/tf
+=== hz /odom
+WARNING: topic [/odom] does not appear to be published yet
+average rate: 11.039
+	min: 0.076s max: 0.134s std dev: 0.01871s window: 13
+average rate: 10.885
+	min: 0.076s max: 0.136s std dev: 0.01914s window: 25
+average rate: 11.088
+	min: 0.076s max: 0.137s std dev: 0.01822s window: 37
+average rate: 10.986
+	min: 0.073s max: 0.139s std dev: 0.01882s window: 49
+average rate: 11.095
+	min: 0.073s max: 0.139s std dev: 0.01820s window: 61
+average rate: 11.030
+	min: 0.073s max: 0.139s std dev: 0.01857s window: 73
+average rate: 11.102
+	min: 0.073s max: 0.139s std dev: 0.01809s window: 85
+average rate: 11.051
+	min: 0.073s max: 0.139s std dev: 0.01834s window: 97
+Traceback (most recent call last):
+  File "/opt/ros/humble/bin/ros2", line 33, in <module>
+    sys.exit(load_entry_point('ros2cli==0.18.7', 'console_scripts', 'ros2')())
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2cli/cli.py", line 89, in main
+    rc = extension.main(parser=parser, args=args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/command/topic.py", line 41, in main
+    return extension.main(args=args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/verb/hz.py", line 89, in main
+    return main(args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/verb/hz.py", line 104, in main
+    _rostopic_hz(node.node, topic, window_size=args.window_size, filter_expr=filter_expr,
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/verb/hz.py", line 273, in _rostopic_hz
+    rclpy.spin_once(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 202, in spin_once
+    executor.spin_once(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 612, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+=== hz /odom_raw
+average rate: 11.486
+	min: 0.077s max: 0.136s std dev: 0.01487s window: 13
+average rate: 11.102
+	min: 0.077s max: 0.137s std dev: 0.01826s window: 24
+average rate: 11.247
+	min: 0.077s max: 0.137s std dev: 0.01745s window: 36
+average rate: 11.097
+	min: 0.077s max: 0.138s std dev: 0.01833s window: 48
+average rate: 11.185
+	min: 0.077s max: 0.138s std dev: 0.01787s window: 60
+average rate: 11.105
+	min: 0.077s max: 0.138s std dev: 0.01815s window: 72
+average rate: 11.162
+	min: 0.077s max: 0.138s std dev: 0.01777s window: 84
+average rate: 11.102
+	min: 0.077s max: 0.140s std dev: 0.01821s window: 96
+average rate: 11.137
+	min: 0.072s max: 0.140s std dev: 0.01794s window: 108
+Traceback (most recent call last):
+  File "/opt/ros/humble/bin/ros2", line 33, in <module>
+    sys.exit(load_entry_point('ros2cli==0.18.7', 'console_scripts', 'ros2')())
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2cli/cli.py", line 89, in main
+    rc = extension.main(parser=parser, args=args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/command/topic.py", line 41, in main
+    return extension.main(args=args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/verb/hz.py", line 89, in main
+    return main(args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/verb/hz.py", line 104, in main
+    _rostopic_hz(node.node, topic, window_size=args.window_size, filter_expr=filter_expr,
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/verb/hz.py", line 273, in _rostopic_hz
+    rclpy.spin_once(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 202, in spin_once
+    executor.spin_once(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 612, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+=== hz / imu
+average rate: 25.465
+	min: 0.008s max: 0.074s std dev: 0.02557s window: 26
+average rate: 24.635
+	min: 0.007s max: 0.074s std dev: 0.02576s window: 51
+average rate: 24.868
+	min: 0.007s max: 0.074s std dev: 0.02572s window: 77
+average rate: 24.812
+	min: 0.007s max: 0.074s std dev: 0.02542s window: 103
+average rate: 24.935
+	min: 0.007s max: 0.074s std dev: 0.02572s window: 129
+average rate: 24.878
+	min: 0.007s max: 0.074s std dev: 0.02539s window: 155
+average rate: 24.888
+	min: 0.007s max: 0.074s std dev: 0.02561s window: 181
+average rate: 24.911
+	min: 0.007s max: 0.074s std dev: 0.02545s window: 207
+average rate: 24.907
+	min: 0.007s max: 0.074s std dev: 0.02561s window: 233
+average rate: 24.943
+	min: 0.007s max: 0.074s std dev: 0.02569s window: 259
+Traceback (most recent call last):
+  File "/opt/ros/humble/bin/ros2", line 33, in <module>
+    sys.exit(load_entry_point('ros2cli==0.18.7', 'console_scripts', 'ros2')())
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2cli/cli.py", line 89, in main
+    rc = extension.main(parser=parser, args=args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/command/topic.py", line 41, in main
+    return extension.main(args=args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/verb/hz.py", line 89, in main
+    return main(args)
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/verb/hz.py", line 104, in main
+    _rostopic_hz(node.node, topic, window_size=args.window_size, filter_expr=filter_expr,
+  File "/opt/ros/humble/lib/python3.10/site-packages/ros2topic/verb/hz.py", line 273, in _rostopic_hz
+    rclpy.spin_once(node)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 202, in spin_once
+    executor.spin_once(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 739, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 728, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 711, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 612, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+=== ros2 node info /odom_corrector
+/odom_corrector
+  Subscribers:
+    /odom_raw: nav_msgs/msg/Odometry
+    /odom_reset: std_msgs/msg/Empty
+  Publishers:
+    /odom: nav_msgs/msg/Odometry
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+    /tf: tf2_msgs/msg/TFMessage
+  Service Servers:
+    /odom_corrector/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /odom_corrector/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /odom_corrector/get_parameters: rcl_interfaces/srv/GetParameters
+    /odom_corrector/list_parameters: rcl_interfaces/srv/ListParameters
+    /odom_corrector/set_parameters: rcl_interfaces/srv/SetParameters
+    /odom_corrector/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+
+=== rosbag2 OK (sqlite3). --list-storage no existe en esta version
+Script started on 2026-07-15 09:18:02+00:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="117" LINES="21"]
+# ros2 node list
+ro# s2 node infobb
+7usage: ros2 node [-h] Call `ros2 node <command> -h` for more detailed usage. ...
+ros2 node: error: argument Call `ros2 node <command> -h` for more detailed usage.: invalid choice: 'infobb' (choose from 'info', 'list')
+# ^[[A      ros2 node u¿  info ( /7 odom_corrector
+usage: ros2 node [-h] Call `ros2 node <command> -h` for more detailed usage. ...
+ros2 node: error: argument Call `ros2 node <command> -h` for more detailed usage.: invalid choice: 'uinfo' (choose from 'info', 'list')
+# ^[[A^[[A^[[A^[[B^[[B^[[B^[[B                            ros2 node info (odom     /odo, M m_correcotr   tor
+/odom_corrector
+  Subscribers:
+    /odom_raw: nav_msgs/msg/Odometry
+    /odom_reset: std_msgs/msg/Empty
+  Publishers:
+    /odom: nav_msgs/msg/Odometry
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+    /tf: tf2_msgs/msg/TFMessage
+  Service Servers:
+    /odom_corrector/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /odom_corrector/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /odom_corrector/get_parameters: rcl_interfaces/srv/GetParameters
+    /odom_corrector/list_parameters: rcl_interfaces/srv/ListParameters
+    /odom_corrector/set_parameters: rcl_interfaces/srv/SetParameters
+    /odom_corrector/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+
+# exit
+
+Script done on 2026-07-15 09:20:07+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-07-15 09:23:07+00:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="117" LINES="21"]
+# echo "Paso 11: aislamiento. ROS_DOMAIN_ID=$ROS_DOMAIN_ID. Otoros robots encendidos en el lab."
+Paso 11: aislamiento. ROS_DOMAIN_ID=20. Otoros robots encendidos en el lab.
+# ros2 topic list
+/battery
+/beep
+/cmd_vel
+/imu
+/odom
+/odom_raw
+/odom_reset
+/parameter_events
+/rosout
+/scan
+/servo_s1
+/servo_s2
+/tf
+# exit
+
+Script done on 2026-07-15 09:24:17+00:00 [COMMAND_EXIT_CODE="0"]
